@@ -1,0 +1,47 @@
+@import "../../node_modules/bootstrap/scss/_functions";
+@import "theme/functions";
+
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "theme/mixins";
+
+@import "user-variables";
+@import "theme/variables";
+@import "../../node_modules/bootstrap/scss/variables";
+
+.chart-hesab {
+    height: 70px;
+}
+
+.sec-header {
+    line-height: 27px;
+}
+
+.merchant{
+    &_card {
+        overflow: hidden;
+    }
+    &_logo {
+        position: absolute;
+        transform: scale(700%);
+        right: 100px;
+        -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.15)), to(rgba(0,0,0,0)));
+        mask-image: linear-gradient(to left, rgba(0,0,0,0.15), rgba(0,0,0,0));
+    }
+}
+
+.qebz {
+    text-align: left;
+}
+
+.c2c {
+    &:hover {
+        text-decoration: none;
+    }
+    &_div {
+        transition: 0.4s all;
+        &:hover {
+            text-decoration: none;
+            background-color: var(--falcon-gray-200);
+        }
+    }
+}
