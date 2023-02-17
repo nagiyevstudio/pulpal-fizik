@@ -1,0 +1,43 @@
+/* -------------------------------------------------------------------------- */
+/*                                Falcon Button                               */
+/* -------------------------------------------------------------------------- */
+/* prettier-ignore */
+.chart-hesab {
+  height: 70px;
+}
+
+.sec-header {
+  line-height: 27px;
+}
+
+.merchant_card {
+  overflow: hidden;
+}
+.merchant_logo {
+  position: absolute;
+  -webkit-transform: scale(700%);
+  -ms-transform: scale(700%);
+  transform: scale(700%);
+  left: 100px;
+  -webkit-mask-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.15)), to(rgba(0, 0, 0, 0)));
+  -webkit-mask-image: linear-gradient(to left, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0));
+  mask-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.15)), to(rgba(0, 0, 0, 0)));
+  mask-image: linear-gradient(to left, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0));
+}
+
+.qebz {
+  text-align: right;
+}
+
+.c2c:hover {
+  text-decoration: none;
+}
+.c2c_div {
+  -webkit-transition: 0.4s all;
+  -o-transition: 0.4s all;
+  transition: 0.4s all;
+}
+.c2c_div:hover {
+  text-decoration: none;
+  background-color: var(--falcon-gray-200);
+}
