@@ -488,33 +488,26 @@
 						</ol>
 					</nav>
 				</div>
-				<form action="">
-					<div class="p-4 d-flex">
-					
-						<div class="p-3">
-							<label class="form-label" for="datepicker">Tarixdən</label>
-							<input class="form-control datetimepicker" id="datepicker" type="text" placeholder="d/m/y" data-options='{"disableMobile":true}' />
-						</div>
-						<div class="p-3">
-							<label class="form-label" for="datepicker">Tarixədək</label>
-							<input class="form-control datetimepicker" id="datepicker" type="text" placeholder="d/m/y" data-options='{"disableMobile":true}' />
-						</div>
-						<div class="p-3">
-							<label class="form-label" for="datepicker">Ödəmə üsulu</label>
-							<select class="form-select" aria-label="Default select example">
-								<option selected="">AZN hesab</option>
-								<option value="1">USD Hesab</option>
-								<option value="2">VISA - 7499</option>
+				<div class="col-12 m-3">
+					<form class="row gx-3 gy-2 align-items-center align-items-lg-start align-items-xxl-center">
+						
+						<div class="col-auto">
+							<select class="form-select form-select-sm" aria-label="Default select example">
+								<option selected="">Ödəmə üsulu</option>
+								<option value="1">AZN hesab</option>
+								<option value="2">USD Hesab</option>
+								<option value="3">VISA - 7499</option>
 							</select>
 						</div>
-						<div class="p-3 pt-5">
-							<button class="btn btn-outline-primary me-1 mb-1" type="button">Tətbiq et</button>
-
+						<div class="col-auto">
+							<h6 class="text-700 m-1">Tarixləri seçin: </h6>
 						</div>
 						
-					
-					</div>
-				</form>
+						<div class="col-auto position-relative">
+							<input class="form-control form-control-sm datetimepicker ps-4" id="reportsDateRange" type="text" data-options="{&quot;mode&quot;:&quot;range&quot;,&quot;dateFormat&quot;:&quot;M d&quot;,&quot;disableMobile&quot;:true , &quot;defaultDate&quot;: [&quot;Nov 10&quot;, &quot;Nov 17&quot;] }" /><span class="fas fa-calendar-alt text-primary position-absolute top-50 translate-middle-y ms-2"> </span>
+						</div>
+					</form>
+				</div>
 				<div class="table-responsive scrollbar">
 					<table class="table table-hover table-striped overflow-hidden">
 					  <thead>
