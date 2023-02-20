@@ -10,7 +10,7 @@
     <!-- ===============================================-->
     <!--    Document Title-->
     <!-- ===============================================-->
-    <title>PulPal | Hesablar</title>
+    <title>PulPal | İdentifikasiyadan keç | Onlayn qaydada</title>
 
 
     <!-- ===============================================-->
@@ -30,6 +30,8 @@
     <!-- ===============================================-->
     <!--    Stylesheets-->
     <!-- ===============================================-->
+	<link href="vendors/dropzone/dropzone.min.css" rel="stylesheet" />
+
     <link href="vendors/prism/prism-okaidia.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700%7cPoppins:300,400,500,600,700,800,900&amp;display=swap" rel="stylesheet">
@@ -330,348 +332,119 @@
 						</ul>
 					</nav>
 
-			<div class="card mb-3 mt-3">
-				<div class="bg-holder d-none d-lg-block bg-card" style="background-image:url(assets/img/icons/spot-illustrations/corner-4.png);">
+			<div class="card m-2">
+				<div class="bg-holder d-none d-lg-block bg-card" style="background-image:url(assets/img/icons/spot-illustrations/corner-1.png);">
 				</div>
 				<div class="card-body position-relative">
 					<div class="row">
 						<div class="col-lg-8">
-							<h3>Hesablar</h3>
+							<h3>Подойти в офис</h3>
 						</div>
 					</div>
 				</div>
 			</div>
 
-          	<div class="row g-3 mb-3">
-				<div class="col-sm-6 col-md-4 col-xxl-3">
-					<div class="card h-md-100 ecommerce-card-min-width">
-						<div class="card-header pb-0">
-							<h6 class="mb-0 mt-1 d-flex justify-content-between">AZN Hesab</h6>
-						</div>
-						<div class="card-body d-flex flex-column justify-content-end">
-							<div class="row">
-								<div class="col">
-									<p class="font-sans-serif lh-1 mb-1 fs-4">2,488 ₼</p><span class="badge rounded-pill bg-primary fs--2">052216874531</span>
-								</div>
-								<div class="col-auto ps-0">
-									<a href="myqr.html"><img src="assets/img/qr-code.svg" alt="" width="50px"></a>
-								</div>
-							</div>
-
-							<div class="mt-3 pt-3 border-top border-200 d-flex flex-between-center">
-								<div class="d-flex align-items-center">
-			
-									<a href="#" class="nav-link nav-link-card-details p-2 me-2 mb-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Hesab balansını artır"><span class="fas fa-download" data-fa-transform="down-2"></span></a>
-
-									<a href="history.html" class="nav-link nav-link-card-details p-2 me-2 mb-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Tarixçə"><span class="far fa-clock"></span></a>
-
-									<a href="#" class="nav-link nav-link-card-details p-2 me-2 mb-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Hesabdan hesaba köçürmə"><span class="fas fa-exchange-alt"></span></a>
-
-									<a href="#" class="nav-link nav-link-card-details p-2 me-2 mb-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Hesabı əsas et"><span class="fas fa-star"></span></a>
-
-								</div>
-							
-							</div>
-
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-4 col-xxl-3">
-					<div class="card h-md-100 ecommerce-card-min-width">
-						<div class="card-header pb-0">
-							<h6 class="mb-0 mt-1 d-flex justify-content-between">USD Hesab</h6>
-						</div>
-						<div class="card-body d-flex flex-column justify-content-end">
-							<div class="row">
-								<div class="col">
-									<p class="font-sans-serif lh-1 mb-1 fs-4">325 $</p><span class="badge rounded-pill bg-primary fs--2">052216874532</span>
-								</div>
-								<div class="col-auto ps-0">
-									<a href="myqr.html"><img src="assets/img/qr-code.svg" alt="" width="50px"></a>
-								</div>
-							</div>
-							<div class="mt-3 pt-3 border-top border-200 d-flex flex-between-center">
-								<div class="d-flex align-items-center">
-			
-									<a href="#" class="nav-link nav-link-card-details p-2 me-2 mb-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Hesab balansını artır"><span class="fas fa-download" data-fa-transform="down-2"></span></a>
-
-									<a href="history.html" class="nav-link nav-link-card-details p-2 me-2 mb-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Tarixçə"><span class="far fa-clock"></span></a>
-
-									<a href="#" class="nav-link nav-link-card-details p-2 me-2 mb-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Hesabdan hesaba köçürmə"><span class="fas fa-exchange-alt"></span></a>
-
-									<a href="#" class="nav-link nav-link-card-details p-2 me-2 mb-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Hesabı əsas et"><span class="fas fa-star"></span></a>
-
-								</div>
-							
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-4 col-xxl-3">
-
-					<div class="card h-100">
-						<div class="card-header pb-0">
-							<h6 class="mb-0 mt-1 d-flex align-items-center">Hesabın limiti</h6>
-						</div>
-						<div class="card-body d-flex flex-column justify-content-end">
-							<div class="row align-items-end">
-							<div class="col">
-								<p class="font-sans-serif lh-1 mb-1 fs-2">34.6%</p><span class="badge badge-soft-success rounded-pill"><span class="fas fa-caret-up me-1"></span>3.5%</span>
-							</div>
-							<div class="col-auto ps-0">
-								<canvas class="my-n5" id="marketShareDoughnut" width="112" height="112"></canvas>
-								<p class="mb-0 text-center fs--2 mt-4 text-500">Qalıq: <span class="text-800">65.4%</span></p>
-							</div>
-							</div>
-						</div>
-						</div>
-
+			<div class="card m-2">
+				<div class="card-header bg-light">
+					<nav style="--falcon-breadcrumb-divider: '»';" aria-label="breadcrumb">
+						<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="acc.html">Hesablar</a></li>
+						<li class="breadcrumb-item" aria-current="page"><a href="id-main.html">identifikasiya</a> </li>
+						<li class="breadcrumb-item active" aria-current="page">Онлайн</li>
+						</ol>
+					</nav>
 					
 				</div>
-				<div class="col-sm-6 col-md-12 col-xxl-3">
-					<div class="card h-lg-100">
-						<div class="bg-holder bg-card" style="background-image:url(assets/img/icons/spot-illustrations/corner-1.png);">
-						</div>
-						<!--/.bg-holder-->
+				<div class="card-body">
+				
+				<div class="m-3">
+					<h4>Пройдите идентификацию онлайн</h4>
+					<p>Загрузите копии документов, чтобы пройти идентификацию и заполните форму. Мы подготовим контракт и вышлем вам на подпись.</p>
 
-						<div class="card-body position-relative">
-							<h5 class="text-warning">İmkanların məhduddur?</h5>
-							<p class="fs--1 mb-0 mt-3">
-								PulPal identifikasiyası Sizə hesabdan limitsiz istifadə etmək imkanını yaradır. <br>
-								Limitli birdəfəlik istifadə imkanı: <b>1000</b> AZN ümumi döviyyə
-							</p>
-							<a class="btn btn-link fs--1 text-warning mt-lg-3 ps-0" href="id-main.html">İdentifikasiyadan keç<span class="fas fa-chevron-right ms-1" data-fa-transform="shrink-4 down-1"></span></a>
+					<a class="btn btn-outline-primary mt-3" href="№">Стоимость услуги 45 AZN — оплата доставки</a>
+
+					<h5 class="mt-5">1. Загрузите копии документов </h5>
+			
+					<div class="row mt-3">
+						<div class="col-lg-6 mt-3">
+							<div class="dropzone dropzone-single p-0" data-dropzone="data-dropzone" data-options='{"url":"valid/url","maxFiles":1,"dictDefaultMessage":"Choose or Drop a file here"}'>
+								<div class="fallback">
+									<input type="file" name="file" />
+								</div>
+								<div class="dz-preview dz-preview-single">
+									<div class="dz-preview-cover dz-complete"><img class="dz-preview-img" src="../../../assets/img/generic/image-file-2.png" alt="..." data-dz-thumbnail="" /><a class="dz-remove text-danger" href="#!" data-dz-remove="data-dz-remove"><span class="fas fa-times"></span></a>
+									<div class="dz-progress"><span class="dz-upload" data-dz-uploadprogress=""></span></div>
+									<div class="dz-errormessage m-1"><span data-dz-errormessage="data-dz-errormessage"></span></div>
+									</div>
+									<div class="dz-progress"><span class="dz-upload" data-dz-uploadprogress=""></span></div>
+								</div>
+								<div class="dz-message" data-dz-message="data-dz-message">
+									<div class="dz-message-text"><img class="me-2" src="../../../assets/img/icons/cloud-upload.svg" width="25" alt="" />Лицевая сторона</div>
+								</div>
+								</div>
+						</div>
+						<div class="col-lg-6 mt-3">
+							<div class="dropzone dropzone-single p-0" data-dropzone="data-dropzone" data-options='{"url":"valid/url","maxFiles":1,"dictDefaultMessage":"Choose or Drop a file here"}'>
+								<div class="fallback">
+									<input type="file" name="file" />
+								</div>
+								<div class="dz-preview dz-preview-single">
+									<div class="dz-preview-cover dz-complete"><img class="dz-preview-img" src="../../../assets/img/generic/image-file-2.png" alt="..." data-dz-thumbnail="" /><a class="dz-remove text-danger" href="#!" data-dz-remove="data-dz-remove"><span class="fas fa-times"></span></a>
+									<div class="dz-progress"><span class="dz-upload" data-dz-uploadprogress=""></span></div>
+									<div class="dz-errormessage m-1"><span data-dz-errormessage="data-dz-errormessage"></span></div>
+									</div>
+									<div class="dz-progress"><span class="dz-upload" data-dz-uploadprogress=""></span></div>
+								</div>
+								<div class="dz-message" data-dz-message="data-dz-message">
+									<div class="dz-message-text"><img class="me-2" src="../../../assets/img/icons/cloud-upload.svg" width="25" alt="" />Оборотная сторона</div>
+								</div>
+								</div>
 						</div>
 					</div>
+
+					<h5 class="mt-5">2. Заполните форму</h5>
+
+					<form action="">
+						<div class="mt-3">
+							<label class="form-label" for="exampleFormControlTextarea1">Адрес Доставки</label>
+							<input class="form-control" id="exampleFormControlInput1" type="email" placeholder="Напишите адрес" />
+						</div>
+						<div class="mt-3">
+							<label class="form-label" for="exampleFormControlTextarea1">Номер телефона</label>
+							<input class="form-control" id="exampleFormControlInput1" type="email" placeholder="Напишите номер телефона" />
+						</div>
+						<div class="mt-3">
+							<label class="form-label me-5" for="exampleFormControlTextarea1">Как с вами связатся?</label>
+							
+							<div class="form-check form-check-inline ье-3">
+								<input class="form-check-input" id="inlineRadio1" type="radio" name="inlineRadioOptions" value="option1" />
+								<label class="form-check-label" for="inlineRadio1">По телефону</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" id="inlineRadio2" type="radio" name="inlineRadioOptions" value="option2" />
+								<label class="form-check-label" for="inlineRadio2">Skype</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" id="inlineRadio2" type="radio" name="inlineRadioOptions" value="option2" />
+								<label class="form-check-label" for="inlineRadio2">Whatsapp</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" id="inlineRadio2" type="radio" name="inlineRadioOptions" value="option2" />
+								<label class="form-check-label" for="inlineRadio2">Telegram</label>
+							</div>
+							
+						</div>
+
+						<button class="btn btn-primary mt-3" type="button">Пройти идентификацию</button>
+					</form>
+
+					
+					
+				</div>
+
+				
 				</div>
 			</div>
-
-			<div class="row g-0">
-				<div class="col-lg-7 col-xl-8 pe-lg-2 mb-3">
-					<div class="card overflow-hidden h-100">
-						<div class="card-header d-flex flex-between-center bg-light py-2">
-						  <h6 class="mb-0 sec-header">Son əməliyyatlar</h6>
-						</div>
-						<div class="card-body py-0">
-						  <div class="table-responsive scrollbar">
-							<table class="table table-dashboard mb-0 fs--1">
-							  <tr>
-								<td class="align-middle ps-0 text-nowrap">
-								  <div class="d-flex position-relative align-items-center"><img class="d-flex align-self-center me-2" src="assets/img/products/azercell.png" alt="" width="30" />
-									<div class="flex-1"><a class="stretched-link" href="#!">
-										<h6 class="mb-0">Azercell</h6>
-									  </a>
-									  <p class="mb-0">Mobil rabitə</p>
-									</div>
-								  </div>
-								</td>
-								<td class="align-middle px-4" style="width:1%;"><span class="badge fs--1 w-100 badge-soft-success">Uğurlu</span></td>
-								<td class="align-middle px-4 text-end text-nowrap" style="width:1%;">
-								  <h6 class="mb-0">15 AZN</h6>
-								  <p class="fs--2 mb-0">01.01.23 - 18:59</p>
-								</td>
-								<td class="align-middle ps-4 pe-1" style="width: 130px; min-width: 130px;">
-								  <select class="form-select form-select-sm px-2 bg-transparent">
-									<option>Hərəkət</option>
-									<option>Təkrarla</option>
-									<option>Qəbz</option>
-								  </select>
-								</td>
-							  </tr>
-							  <tr>
-								<td class="align-middle ps-0 text-nowrap">
-								  <div class="d-flex position-relative align-items-center"><img class="d-flex align-self-center me-2" src="assets/img/products/azerisiq.png" alt="" width="30" />
-									<div class="flex-1"><a class="stretched-link" href="#!">
-										<h6 class="mb-0">Azərişıq</h6>
-									  </a>
-									  <p class="mb-0">Komunal xidmətlər</p>
-									</div>
-								  </div>
-								</td>
-								<td class="align-middle px-4" style="width:1%;"><span class="badge fs--1 w-100 badge-soft-warning">Gözləmə</span></td>
-								<td class="align-middle px-4 text-end text-nowrap" style="width:1%;">
-								  <h6 class="mb-0">68,52 AZN</h6>
-								  <p class="fs--2 mb-0">01.01.23 - 18:59</p>
-								</td>
-								<td class="align-middle ps-4 pe-1" style="width: 130px; min-width: 130px;">
-								  <select class="form-select form-select-sm px-2 bg-transparent">
-									<option>Hərəkət</option>
-									<option>Təkrarla</option>
-									<option>Qəbz</option>
-								  </select>
-								</td>
-							  </tr>
-							  <tr>
-								<td class="align-middle ps-0 text-nowrap">
-								  <div class="d-flex position-relative align-items-center"><img class="d-flex align-self-center me-2" src="assets/img/products/azeriqaz.png" alt="" width="30" />
-									<div class="flex-1"><a class="stretched-link" href="#!">
-										<h6 class="mb-0">Azəriqaz</h6>
-									  </a>
-									  <p class="mb-0">Komunal xidmətlər</p>
-									</div>
-								  </div>
-								</td>
-								<td class="align-middle px-4" style="width:1%;"><span class="badge fs--1 w-100 badge-soft-warning">Gözləmə</span></td>
-								<td class="align-middle px-4 text-end text-nowrap" style="width:1%;">
-								  <h6 class="mb-0">30 AZN</h6>
-								  <p class="fs--2 mb-0">01.01.23 - 18:59</p>
-								</td>
-								<td class="align-middle ps-4 pe-1" style="width: 130px; min-width: 130px;">
-								  <select class="form-select form-select-sm px-2 bg-transparent">
-									<option>Hərəkət</option>
-									<option>Təkrarla</option>
-									<option>Qəbz</option>
-								  </select>
-								</td>
-							  </tr>
-							  <tr>
-								<td class="align-middle ps-0 text-nowrap">
-								  <div class="d-flex position-relative align-items-center"><img class="d-flex align-self-center me-2" src="assets/img/products/azersu.png" alt="" width="30" />
-									<div class="flex-1"><a class="stretched-link" href="#!">
-										<h6 class="mb-0">Azərsu</h6>
-									  </a>
-									  <p class="mb-0">Komunal xidmətlər</p>
-									</div>
-								  </div>
-								</td>
-								<td class="align-middle px-4" style="width:1%;"><span class="badge fs--1 w-100 badge-soft-warning">Gözləmə</span></td>
-								<td class="align-middle px-4 text-end text-nowrap" style="width:1%;">
-								  <h6 class="mb-0">20 AZN</h6>
-								  <p class="fs--2 mb-0">01.01.23 - 18:59</p>
-								</td>
-								<td class="align-middle ps-4 pe-1" style="width: 130px; min-width: 130px;">
-								  <select class="form-select form-select-sm px-2 bg-transparent">
-									<option>Hərəkət</option>
-									<option>Təkrarla</option>
-									<option>Qəbz</option>
-								  </select>
-								</td>
-							  </tr>
-							  <tr>
-								<td class="align-middle ps-0 text-nowrap">
-								  <div class="d-flex position-relative align-items-center"><img class="d-flex align-self-center me-2" src="assets/img/products/azersu.png" alt="" width="30" />
-									<div class="flex-1"><a class="stretched-link" href="#!">
-										<h6 class="mb-0">Azərsu</h6>
-									  </a>
-									  <p class="mb-0">Komunal xidmətlər</p>
-									</div>
-								  </div>
-								</td>
-								<td class="align-middle px-4" style="width:1%;"><span class="badge fs--1 w-100 badge-soft-warning">Gözləmə</span></td>
-								<td class="align-middle px-4 text-end text-nowrap" style="width:1%;">
-								  <h6 class="mb-0">20 AZN</h6>
-								  <p class="fs--2 mb-0">01.01.23 - 18:59</p>
-								</td>
-								<td class="align-middle ps-4 pe-1" style="width: 130px; min-width: 130px;">
-								  <select class="form-select form-select-sm px-2 bg-transparent">
-									<option>Hərəkət</option>
-									<option>Təkrarla</option>
-									<option>Qəbz</option>
-								  </select>
-								</td>
-							  </tr>
-							  <tr>
-								<td class="align-middle ps-0 text-nowrap">
-								  <div class="d-flex position-relative align-items-center"><img class="d-flex align-self-center me-2" src="assets/img/products/azersu.png" alt="" width="30" />
-									<div class="flex-1"><a class="stretched-link" href="#!">
-										<h6 class="mb-0">Azərsu</h6>
-									  </a>
-									  <p class="mb-0">Komunal xidmətlər</p>
-									</div>
-								  </div>
-								</td>
-								<td class="align-middle px-4" style="width:1%;"><span class="badge fs--1 w-100 badge-soft-warning">Gözləmə</span></td>
-								<td class="align-middle px-4 text-end text-nowrap" style="width:1%;">
-								  <h6 class="mb-0">20 AZN</h6>
-								  <p class="fs--2 mb-0">01.01.23 - 18:59</p>
-								</td>
-								<td class="align-middle ps-4 pe-1" style="width: 130px; min-width: 130px;">
-								  <select class="form-select form-select-sm px-2 bg-transparent">
-									<option>Hərəkət</option>
-									<option>Təkrarla</option>
-									<option>Qəbz</option>
-								  </select>
-								</td>
-							  </tr>
-							  
-							  <tr class="border-0">
-								<td class="align-middle ps-0 text-nowrap border-0">
-								  <div class="d-flex position-relative align-items-center"><img class="d-flex align-self-center me-2" src="assets/img/products/fn.png" alt="" width="30" />
-									<div class="flex-1"><a class="stretched-link" href="#!">
-										<h6 class="mb-0">Faiq Nağıyev</h6>
-									  </a>
-									  <p class="mb-0">Hesaba köçürmə</p>
-									</div>
-								  </div>
-								</td>
-								<td class="align-middle px-4 border-0" style="width:1%;"><span class="badge fs--1 w-100 badge-soft-danger">İmtina</span></td>
-								<td class="align-middle px-4 text-end text-nowrap border-0" style="width:1%;">
-								  <h6 class="mb-0">300 AZN</h6>
-								  <p class="fs--2 mb-0">01.01.23 - 18:59</p>
-								</td>
-								<td class="align-middle ps-4 pe-1 border-0" style="width: 130px; min-width: 130px;">
-								  <select class="form-select form-select-sm px-2 bg-transparent">
-									<option>Hərəkət</option>
-									<option>Təkrarla</option>
-									<option>Qəbz</option>
-								  </select>
-								</td>
-							  </tr>
-							</table>
-						  </div>
-						</div>
-						<div class="card-footer bg-light py-2">
-						  <div class="row flex-between-center">
-							<div class="col-auto">
-							  
-							</div>
-							<div class="col-auto"><a class="btn btn-link btn-sm px-0 fw-medium" href="history.html">Tarixçə<span class="fas fa-chevron-right ms-1 fs--2"></span></a></div>
-						  </div>
-						</div>
-					  </div>
-				</div>
-				<div class="col-lg-5 col-xl-4 ps-lg-2 mb-3">
-					<div class="card h-100">
-						<div class="card-header">
-						  <div class="d-flex align-items-center"><img class="me-2" src="assets/img/icons/signal.png" alt="" height="35" />
-							<h5 class="fs-0 fw-normal text-800 mb-0">Tez-tez verilən suallar (FAQ)</h5>
-						  </div>
-						</div>
-						<div class="card-body p-0">
-						  <div class="scrollbar-overlay pt-0 px-x1 ask-analytics">
-							<div class="border border-1 border-300 rounded-2 p-3 ask-analytics-item position-relative mb-3">
-							  <div class="d-flex align-items-center mb-3"><span class="fas fa-code-branch text-primary"></span><a class="stretched-link text-decoration-none" href="#!">
-								  <h5 class="fs--1 text-600 mb-0 ps-3">Hesab limitləri nədir?</h5>
-								</a></div>
-							  <h5 class="fs--1 text-800">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
-							</div>
-							<div class="border border-1 border-300 rounded-2 p-3 ask-analytics-item position-relative mb-3">
-							  <div class="d-flex align-items-center mb-3"><span class="fas fa-bug text-primary"></span><a class="stretched-link text-decoration-none" href="#!">
-								  <h5 class="fs--1 text-600 mb-0 ps-3">Ödənişi necə edim?</h5>
-								</a></div>
-							  <h5 class="fs--1 text-800">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
-							</div>
-							<div class="border border-1 border-300 rounded-2 p-3 ask-analytics-item position-relative mb-3">
-							  <div class="d-flex align-items-center mb-3"><span class="fas fa-project-diagram text-primary"></span><a class="stretched-link text-decoration-none" href="#!">
-								  <h5 class="fs--1 text-600 mb-0 ps-3">Səbət nə üçündür?</h5>
-								</a></div>
-							  <h5 class="fs--1 text-800">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
-							</div>
-							<div class="border border-1 border-300 rounded-2 p-3 ask-analytics-item position-relative mb-3">
-							  <div class="d-flex align-items-center mb-3"><span class="fas fa-map-marker-alt text-primary"></span><a class="stretched-link text-decoration-none" href="#!">
-								  <h5 class="fs--1 text-600 mb-0 ps-3">Dosta köçürmə necə aparılır?</h5>
-								</a></div>
-							  <h5 class="fs--1 text-800">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
-							</div>
-						  </div>
-						</div>
-						<div class="card-footer bg-light text-end py-2"><a class="btn btn-link btn-sm px-0 fw-medium" href="#!">Daha çox sual-cavab<span class="fas fa-chevron-right ms-1 fs--2"></span></a></div>
-					  </div>
-				</div>
-			</div>
-
-          		
-
 
 			<footer class="footer">
 				<div class="row g-0 justify-content-between fs--1 mt-4 mb-3">
@@ -688,19 +461,21 @@
       </div>
     </main>
     <!-- ===============================================-->
-    <!--    End of Main Content-->
+    <!--    MODAL-->
     <!-- ===============================================-->
 
 
 
     <!-- ===============================================-->
-    <!--    JavaScripts-->
+    <!-- JavaScripts -->
     <!-- ===============================================-->
     <script src="vendors/popper/popper.min.js"></script>
     <script src="vendors/bootstrap/bootstrap.min.js"></script>
     <script src="vendors/anchorjs/anchor.min.js"></script>
     <script src="vendors/is/is.min.js"></script>
     <script src="vendors/prism/prism.js"></script>
+
+	<script src="vendors/dropzone/dropzone.min.js"></script>
 
     <script src="vendors/chart/chart.min.js"></script>
     <script src="vendors/fontawesome/all.min.js"></script>
