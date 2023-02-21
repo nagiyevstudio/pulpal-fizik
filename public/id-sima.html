@@ -10,7 +10,7 @@
     <!-- ===============================================-->
     <!--    Document Title-->
     <!-- ===============================================-->
-    <title>PulPal | İdentifikasiyadan keç</title>
+    <title>PulPal | İdentifikasiyadan keç | SİMA</title>
 
 
     <!-- ===============================================-->
@@ -30,6 +30,8 @@
     <!-- ===============================================-->
     <!--    Stylesheets-->
     <!-- ===============================================-->
+	<link href="vendors/dropzone/dropzone.min.css" rel="stylesheet" />
+
     <link href="vendors/prism/prism-okaidia.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700%7cPoppins:300,400,500,600,700,800,900&amp;display=swap" rel="stylesheet">
@@ -336,7 +338,7 @@
 				<div class="card-body position-relative">
 					<div class="row">
 						<div class="col-lg-8">
-							<h3>Пройти идентификацию</h3>
+							<h3>SİMA</h3>
 						</div>
 					</div>
 				</div>
@@ -347,93 +349,39 @@
 					<nav style="--falcon-breadcrumb-divider: '»';" aria-label="breadcrumb">
 						<ol class="breadcrumb">
 						<li class="breadcrumb-item"><a href="acc.html">Hesablar</a></li>
-						<li class="breadcrumb-item active" aria-current="page">identifikasiya</li>
+						<li class="breadcrumb-item" aria-current="page"><a href="id-main.html">identifikasiya</a> </li>
+						<li class="breadcrumb-item active" aria-current="page">SİMA</li>
 						</ol>
 					</nav>
 					
 				</div>
 				<div class="card-body">
-				<h5 class="fs-0 mb-3">Выберите удобный способ индефикации</h5>
-				<div class="row g-3">
-					<div class="col-xxl-4 col-lg-6">
-						<div class="d-flex align-items-center px-4 py-x1 bg-light rounded-3 border position-relative merchant_card">
-							<img src="assets/img/icons/offline.svg" alt="Azercell" width="50" />
-							
-							<div class="ms-3 my-x1">
-							<h5 class="fs-0 fw-semi-bold mb-2"><a class="text-900 hover-primary stretched-link" href="id-offline.html">Подойти в офис</a></h5>
-							<h6 class="mb-0 text-600">Чтобы подписать документы...</h6>
-							</div>
+				
+				<div class="m-3">
+					<h4>Пройдите идентификацию SİMA</h4>
+					<p>Авторизируйтесь в SİMA, чтобы пройти идентификацию.</p>
+
+
+					<form action="">
+						<div class="mt-3">
+							<label class="form-label" for="exampleFormControlTextarea1">Номер телефона</label>
+							<input class="form-control" id="exampleFormControlInput1" type="phone" placeholder="+994 00 000 00 00" />
 						</div>
-					</div>
-					<div class="col-xxl-4 col-lg-6">
-					<div class="d-flex align-items-center px-4 py-x1 bg-light rounded-3 border position-relative merchant_card">
-						<img src="assets/img/icons/online.svg" alt="Bakcell" width="50" />
-						
-						<div class="ms-3 my-x1">
-						<h5 class="fs-0 fw-semi-bold mb-2"><a class="text-900 hover-primary stretched-link" href="id-online.html">Онлайн</a></h5>
-						<h6 class="mb-0 text-600">Документы Вам доставят...</h6>
+						<div class="mt-3">
+							<label class="form-label" for="exampleFormControlTextarea1">İD пользоателья SİMAa</label>
+							<input class="form-control" id="exampleFormControlInput1" type="text" placeholder="123456" />
 						</div>
-					</div>
-					</div>
-					<div class="col-xxl-4 col-lg-6">
-						<div class="d-flex align-items-center px-4 py-x1 bg-light rounded-3 border position-relative merchant_card">
-						<img src="assets/img/icons/sima.svg" alt="Bakcell" width="50" />
-						
-						<div class="ms-3 my-x1">
-							<h5 class="fs-0 fw-semi-bold mb-2"><a class="text-900 hover-primary stretched-link" href="id-sima.html">SİMA</a></h5>
-							<h6 class="mb-0 text-600">Авторизация через систему...</h6>
-						</div>
-						</div>
-					</div>
+
+						<button class="btn btn-primary mt-3" type="button">Пройти идентификацию</button>
+					</form>
+
+					
 					
 				</div>
-
-
-				<div class="m-3 text-center">
-					<div class="row mt-5">
-					  <div class="col">
-						<h1 class="fs-2 fs-sm-4 fs-md-5">Пройди <span class="text-warning">идентификацию</span> — забудь про ограничения!</h1>
-						<p class="lead">Анонимные пользователи ограничены в электронных платежах по законодательству АР. Предоставь свои документы, чтобы пройти индификацию и использовать PulPal без ограничений.</p>
-
-						<p class="fw-bold mt-5">Идентифицированный кошелёк, это:</p>
-					  </div>
-					</div>
-					<div class="row mt-6">
-					  <div class="col-lg-4">
-						<div class="card card-span h-100">
-						  <div class="card-span-img"><span class="fas fa-money-bill-wave fs-4 text-info"></span></div>
-						  <div class="card-body pt-6 pb-4">
-							<h5 class="mb-2">Оплаты во всех категориях</h5>
-							<p>Оплачивайте во всех категориях: сеть магазонов, платежные системы, банки и т.д.</p>
-						  </div>
-						</div>
-					  </div>
-					  <div class="col-lg-4 mt-6 mt-lg-0">
-						<div class="card card-span h-100">
-						  <div class="card-span-img"><span class="fas fa-coins fs-4 text-success"></span></div>
-						  <div class="card-body pt-6 pb-4">
-							<h5 class="mb-2">Неограниченные переводы</h5>
-							<p>Денежные переводы и электронные платежи без ограничений на сумму</p>
-						  </div>
-						</div>
-					  </div>
-					  <div class="col-lg-4 mt-6 mt-lg-0">
-						<div class="card card-span h-100">
-						  <div class="card-span-img"><span class="fas fa-infinity fs-4 text-danger"></span></div>
-						  <div class="card-body pt-6 pb-4">
-							<h5 class="mb-2">Безлимитный баланс</h5>
-							<p>Пополняте кошелёк без ограничений.</p>
-						  </div>
-						</div>
-					  </div>
-					</div>
-				  </div>
 
 				
 				</div>
 			</div>
-          		
-
 
 			<footer class="footer">
 				<div class="row g-0 justify-content-between fs--1 mt-4 mb-3">
@@ -463,6 +411,8 @@
     <script src="vendors/anchorjs/anchor.min.js"></script>
     <script src="vendors/is/is.min.js"></script>
     <script src="vendors/prism/prism.js"></script>
+
+	<script src="vendors/dropzone/dropzone.min.js"></script>
 
     <script src="vendors/chart/chart.min.js"></script>
     <script src="vendors/fontawesome/all.min.js"></script>
