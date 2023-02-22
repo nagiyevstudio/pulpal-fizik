@@ -67,7 +67,7 @@
 				var isFluid = JSON.parse(localStorage.getItem('isFluid'));
 				if (isFluid) {
 					var container = document.querySelector('[data-layout]');
-					container.classList.remove('container');
+					container.classList.Sil('container');
 					container.classList.add('container-fluid');
 				}
 			</script>
@@ -75,7 +75,7 @@
 				<script>
 					var navbarStyle = localStorage.getItem("navbarStyle");
 					if (navbarStyle && navbarStyle !== 'transparent') {
-						document.querySelector('.navbar-vertical').classList.add(`navbar-${navbarStyle}`);
+						document.querySelector('.navbar-vertical').classList.add(`navbar-₼ {navbarStyle}`);
 					}
 				</script>
 				<div class="d-flex align-items-center">
@@ -177,7 +177,7 @@
 									<div class="d-flex align-items-center"><span class="nav-link-icon"><span class="fas fa-heart"></span></span><span class="nav-link-text ps-1">Seçilmişlər</span>
 									</div>
 								</a>
-								<!-- parent pages--><a class="nav-link active" href="settings.html" role="button">
+								<!-- parent pages--><a class="nav-link" href="settings.html" role="button">
 									<div class="d-flex align-items-center"><span class="nav-link-icon"><span class="fas fa-cog"></span></span><span class="nav-link-text ps-1">Ayarlar</span>
 									</div>
 								</a>
@@ -341,53 +341,151 @@
 					</div>
 				</div>
 
-				<div class="row g-0">
-					<div class="col-12 col-md-6">
-						<div class="card m-2">
-							<div class="card-header">
-								<h5 class="mb-0">Şifrə dəyişmək</h5>
-							</div>
-							<div class="card-body">
-								<form class="row g-3 needs-validation" novalidate>
-									<div class="col-md-12">
-										<label for="validationCustom01" class="form-label">Mövcud şifrə</label>
-										<input type="password" class="form-control" id="validationCustom01" placeholder="Mövcud şifrənizi daxil edin" required />
-										<div class="valid-feedback">Düzgün!</div>
-									</div>
-									<div class="col-md-12">
-										<label for="validationCustom02" class="form-label">Yeni şifrə</label>
-										<input type="password" class="form-control" id="validationCustom02" placeholder="Yeni şifrənizi daxil edin" required />
-										<div class="valid-feedback">Düzgün!</div>
-									</div>
-									<div class="col-md-12">
-										<label for="validationCustom03" class="form-label">Yeni şifrə təkrarı</label>
-										<input type="password" class="form-control" id="validationCustom03" placeholder="Yeni şifrənizi təkrar daxil edin" required />
-										<div class="valid-feedback">Düzgün!</div>
-									</div>
-									<div class="col-12 mt-3">
-										<button class="btn btn-primary" type="submit">Yadda saxla</button>
-									</div>
-								</form>
-							</div>
+				<div class="card m-2">
+					<div class="card-header">
+					  <div class="row justify-content-between">
+						<div class="col-md-auto">
+						  <h5 class="mb-3 mb-md-0">Ödəniş səbəti (7 ödəniş)</h5>
 						</div>
+						<div class="col-md-auto"><a class="btn btn-sm btn-outline-secondary border-300 me-2 shadow-none" href="payments.html"> <span class="fas fa-chevron-left me-1" data-fa-transform="shrink-4"></span>Ödənişlərə qayıt</a><a class="btn btn-sm btn-primary" href="payment-details.html">Səbətdəki ödənişləri icra et</a></div>
+					  </div>
 					</div>
-					<div class="col-12 col-md-6">
-						<div class="card m-2">
-							<div class="card-header">
-								<h5 class="mb-0">Dili dəyişmək</h5>
-							</div>
-							<div class="card-body">
-								<select class="form-select" aria-label="Default select example">
-									<option selected="">Azərbaycan</option>
-									<option value="1">İngilis</option>
-									<option value="2">Rus</option>
-								  </select>
-							</div>
+					<div class="card-body p-0">
+					  <div class="row gx-card mx-0 bg-200 text-900 fs--1 fw-semi-bold">
+						<div class="col-9 col-md-8 py-2">Ad</div>
+						<div class="col-3 col-md-4">
+						  <div class="row">
+							
+							<div class="col-12 text-end py-2">Qiymət</div>
+						  </div>
 						</div>
+					  </div>
+					  <div class="row gx-card mx-0 align-items-center border-bottom border-200">
+						<div class="col-8 py-3">
+						  <div class="d-flex align-items-center"><a href="#"><img class="img-fluid rounded-1 me-3 d-none d-md-block" src="assets/img/products/azercell.png" alt="" width="60" /></a>
+							<div class="flex-1">
+							  <h5 class="fs-0"><a class="text-900" href="#">Azercell</a></h5>
+							  <div class="fs--2 fs-md--1"><a class="text-danger" href="#!">Sil</a></div>
+							</div>
+						  </div>
+						</div>
+						<div class="col-4 py-3">
+						  <div class="row align-items-center">
+							
+							<div class="text-end ps-0 order-0 order-md-1 mb-2 mb-md-0 text-600">₼ 1292</div>
+						  </div>
+						</div>
+					  </div>
+					  <div class="row gx-card mx-0 align-items-center border-bottom border-200">
+						<div class="col-8 py-3">
+						  <div class="d-flex align-items-center"><a href="#"><img class="img-fluid rounded-1 me-3 d-none d-md-block" src="assets/img/products/azerisiq.png" alt="" width="60" /></a>
+							<div class="flex-1">
+							  <h5 class="fs-0"><a class="text-900" href="#">Azərişıq</a></h5>
+							  <div class="fs--2 fs-md--1"><a class="text-danger" href="#!">Sil</a></div>
+							</div>
+						  </div>
+						</div>
+						<div class="col-4 py-3">
+						  <div class="row align-items-center">
+							
+							<div class="text-end ps-0 order-0 order-md-1 mb-2 mb-md-0 text-600">₼ 2012</div>
+						  </div>
+						</div>
+					  </div>
+					  <div class="row gx-card mx-0 align-items-center border-bottom border-200">
+						<div class="col-8 py-3">
+						  <div class="d-flex align-items-center"><a href="#"><img class="img-fluid rounded-1 me-3 d-none d-md-block" src="assets/img/products/azercell.png" alt="" width="60" /></a>
+							<div class="flex-1">
+							  <h5 class="fs-0"><a class="text-900" href="#">Citynet</a></h5>
+							  <div class="fs--2 fs-md--1"><a class="text-danger" href="#!">Sil</a></div>
+							</div>
+						  </div>
+						</div>
+						<div class="col-4 py-3">
+						  <div class="row align-items-center">
+							
+							<div class="text-end ps-0 order-0 order-md-1 mb-2 mb-md-0 text-600">₼ 1024</div>
+						  </div>
+						</div>
+					  </div>
+					  <div class="row gx-card mx-0 align-items-center border-bottom border-200">
+						<div class="col-8 py-3">
+						  <div class="d-flex align-items-center"><a href="#"><img class="img-fluid rounded-1 me-3 d-none d-md-block" src="assets/img/products/bakcell.png" alt="" width="60" /></a>
+							<div class="flex-1">
+							  <h5 class="fs-0"><a class="text-900" href="#">Bakcell</a></h5>
+							  <div class="fs--2 fs-md--1"><a class="text-danger" href="#!">Sil</a></div>
+							</div>
+						  </div>
+						</div>
+						<div class="col-4 py-3">
+						  <div class="row align-items-center">
+							
+							<div class="text-end ps-0 order-0 order-md-1 mb-2 mb-md-0 text-600">₼ 990</div>
+						  </div>
+						</div>
+					  </div>
+					  <div class="row gx-card mx-0 align-items-center border-bottom border-200">
+						<div class="col-8 py-3">
+						  <div class="d-flex align-items-center"><a href="#"><img class="img-fluid rounded-1 me-3 d-none d-md-block" src="assets/img/products/nar.svg" alt="" width="60" /></a>
+							<div class="flex-1">
+							  <h5 class="fs-0"><a class="text-900" href="#">Nar Mobile</a></h5>
+							  <div class="fs--2 fs-md--1"><a class="text-danger" href="#!">Sil</a></div>
+							</div>
+						  </div>
+						</div>
+						<div class="col-4 py-3">
+						  <div class="row align-items-center">
+							
+							<div class="text-end ps-0 order-0 order-md-1 mb-2 mb-md-0 text-600">₼ 400</div>
+						  </div>
+						</div>
+					  </div>
+					  <div class="row gx-card mx-0 align-items-center border-bottom border-200">
+						<div class="col-8 py-3">
+						  <div class="d-flex align-items-center"><a href="#"><img class="img-fluid rounded-1 me-3 d-none d-md-block" src="assets/img/products/azersu.png" alt="" width="60" /></a>
+							<div class="flex-1">
+							  <h5 class="fs-0"><a class="text-900" href="#">Azərsu</a></h5>
+							  <div class="fs--2 fs-md--1"><a class="text-danger" href="#!">Sil</a></div>
+							</div>
+						  </div>
+						</div>
+						<div class="col-4 py-3">
+						  <div class="row align-items-center">
+							
+							<div class="text-end ps-0 order-0 order-md-1 mb-2 mb-md-0 text-600">₼ 2398</div>
+						  </div>
+						</div>
+					  </div>
+					  <div class="row gx-card mx-0 align-items-center border-bottom border-200">
+						<div class="col-8 py-3">
+						  <div class="d-flex align-items-center"><a href="#"><img class="img-fluid rounded-1 me-3 d-none d-md-block" src="assets/img/products/azeriqaz.png" alt="" width="60" /></a>
+							<div class="flex-1">
+							  <h5 class="fs-0"><a class="text-900" href="#">Azəriqaz</a></h5>
+							  <div class="fs--2 fs-md--1"><a class="text-danger" href="#!">Sil</a></div>
+							</div>
+						  </div>
+						</div>
+						<div class="col-4 py-3">
+						  <div class="row align-items-center">
+							
+							<div class="text-end ps-0 order-0 order-md-1 mb-2 mb-md-0 text-600">₼ 400</div>
+						  </div>
+						</div>
+					  </div>
+					  <div class="row fw-bold gx-card mx-0">
+						<div class="col-9 col-md-8 py-2 text-end text-900">Cəmi</div>
+						<div class="col px-0">
+						  <div class="row gx-card mx-0">
+							
+							<div class="col-12 text-end py-2">₼ 8516</div>
+						  </div>
+						</div>
+					  </div>
 					</div>
-
-
-				</div>
+					<div class="card-footer bg-light d-flex justify-content-end">
+					 <a class="btn btn-sm btn-primary" href="payment-details.html">Səbətdəki ödənişləri icra et</a>
+					</div>
+				  </div>
 
  
 				<footer class="footer">
