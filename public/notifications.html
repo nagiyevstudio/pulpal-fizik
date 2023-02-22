@@ -10,7 +10,7 @@
     <!-- ===============================================-->
     <!--    Document Title-->
     <!-- ===============================================-->
-    <title>PulPal | Səhv baş verdi</title>
+    <title>PulPal | Bildirişlər</title>
 
 
     <!-- ===============================================-->
@@ -67,7 +67,7 @@
 				var isFluid = JSON.parse(localStorage.getItem('isFluid'));
 				if (isFluid) {
 					var container = document.querySelector('[data-layout]');
-					container.classList.Sil('container');
+					container.classList.remove('container');
 					container.classList.add('container-fluid');
 				}
 			</script>
@@ -75,7 +75,7 @@
 				<script>
 					var navbarStyle = localStorage.getItem("navbarStyle");
 					if (navbarStyle && navbarStyle !== 'transparent') {
-						document.querySelector('.navbar-vertical').classList.add(`navbar-₼ {navbarStyle}`);
+						document.querySelector('.navbar-vertical').classList.add(`navbar-${navbarStyle}`);
 					}
 				</script>
 				<div class="d-flex align-items-center">
@@ -177,7 +177,7 @@
 									<div class="d-flex align-items-center"><span class="nav-link-icon"><span class="fas fa-heart"></span></span><span class="nav-link-text ps-1">Seçilmişlər</span>
 									</div>
 								</a>
-								<!-- parent pages--><a class="nav-link" href="settings.html" role="button">
+								<!-- parent pages--><a class="nav-link active" href="settings.html" role="button">
 									<div class="d-flex align-items-center"><span class="nav-link-icon"><span class="fas fa-cog"></span></span><span class="nav-link-text ps-1">Ayarlar</span>
 									</div>
 								</a>
@@ -330,27 +330,185 @@
 				</nav>
 
 				<div class="card m-2">
-					<div class="bg-holder d-none d-lg-block bg-card" style="background-image:url(assets/img/icons/spot-illustrations/corner-1.png);">
+					<div class="bg-holder d-none d-lg-block bg-card" style="background-image:url(assets/img/icons/spot-illustrations/corner-4.png);">
 					</div>
 					<div class="card-body position-relative">
 						<div class="row">
 							<div class="col-lg-8">
-								<h3 class="m-0">Ödəniş baş tutmadı</h3>
+								<h3 class="m-0">Bildirişlər</h3>
 							</div>
 						</div>
 					</div>
 				</div>
 
-				<div class="card m-2">
-					<div class="card-body">
-						<div class="row">
-							<div class="col-12 text-center">
-								<img class="m-5" src="assets/img/icons/spot-illustrations/error.svg" alt="">
-								<h3 class="mb-4 text-warning">Bağışlayin, səhv baş verdi!</h3>
+				<div class="card overflow-hidden m-2">
+					<div class="card-header bg-light">
+						<div class="row flex-between-center">
+							<div class="col-sm-auto">
+								<h5 class="mb-1 mb-md-0">Your Notifications</h5>
+							</div>
+							<div class="col-sm-auto fs--1">
+								<a class="font-sans-serif ms-2 ms-sm-3" href="#!">Hamısını oxunmuş kimi işarələ</a>
 							</div>
 						</div>
 					</div>
-				</div>
+					<div class="card-body fs--1 p-0">
+					  <a class="border-bottom-0 notification rounded-0 border-x-0 border-300" href="#!" data-bs-toggle="modal" data-bs-target="#error-modal" data-bs-toggle="modal" data-bs-target="#error-modal">
+						<div class="notification-avatar">
+						  <div class="avatar avatar-xl me-3">
+							<img class="rounded-circle" src="assets/img/team/1.jpg" alt="" />
+		
+						  </div>
+						</div>
+						<div class="notification-body">
+						  <p class="mb-1">Announcing the winners of the <strong>The only book awards</strong> decided by you, the readers. Check out the champions and runners-up in all 21 categories now!</p>
+						  <span class="notification-time"><span class="me-2" role="img" aria-label="Emoji">📢</span>Just Now</span>
+		
+						</div>
+					  </a>
+		
+					  <a class="border-bottom-0 notification-unread notification rounded-0 border-x-0 border-300" href="#!" data-bs-toggle="modal" data-bs-target="#error-modal">
+						<div class="notification-avatar">
+						  <div class="avatar avatar-xl me-3">
+							<img class="rounded-circle" src="assets/img/team/2.jpg" alt="" />
+		
+						  </div>
+						</div>
+						<div class="notification-body">
+						  <p class="mb-1">Last chance to vote in <strong>The 2018 Falcon Choice Awards</strong>! See what made it to the Final Round and help your favorites take home the win. Voting closes on November 26</p>
+						  <span class="notification-time"><span class="me-2" role="img" aria-label="Emoji">🏆</span>15m</span>
+		
+						</div>
+					  </a>
+		
+					  <a class="border-bottom-0 notification rounded-0 border-x-0 border-300" href="#!" data-bs-toggle="modal" data-bs-target="#error-modal">
+						<div class="notification-avatar">
+						  <div class="avatar avatar-xl me-3">
+							<img class="rounded-circle" src="assets/img/team/3.jpg" alt="" />
+		
+						  </div>
+						</div>
+						<div class="notification-body">
+						  <p class="mb-1"><strong>Jennifer Kent</strong> declared you as a <strong>President</strong> of Computer Science and Engineering Society</p>
+						  <span class="notification-time"><span class="me-2" role="img" aria-label="Emoji">📢</span>1h</span>
+		
+						</div>
+					  </a>
+		
+					  <a class="border-bottom-0 notification-unread notification rounded-0 border-x-0 border-300" href="#!" data-bs-toggle="modal" data-bs-target="#error-modal">
+						<div class="notification-avatar">
+						  <div class="avatar avatar-xl me-3">
+							<img class="rounded-circle" src="assets/img/team/4.jpg" alt="" />
+		
+						  </div>
+						</div>
+						<div class="notification-body">
+						  <p class="mb-1">Congratulate <strong>Woody Allen</strong> for starting a new position as Business Development Manager &amp; Implementation Engineer at <strong>Hewlett Packard Enterprise(HP)</strong></p>
+						  <span class="notification-time"><span class="me-2" role="img" aria-label="Emoji">🎁</span>6h</span>
+		
+						</div>
+					  </a>
+		
+					  <a class="border-bottom-0 notification-unread notification rounded-0 border-x-0 border-300" href="#!" data-bs-toggle="modal" data-bs-target="#error-modal">
+						<div class="notification-avatar">
+						  <div class="avatar avatar-xl me-3">
+							<img class="rounded-circle" src="assets/img/team/5.jpg" alt="" />
+		
+						  </div>
+						</div>
+						<div class="notification-body">
+						  <p class="mb-1"><strong>Christopher Nolan</strong> Mentioned you in a comment : "Congratulations! Wishing you a great future. Proud fo you ❤️"</p>
+						  <span class="notification-time"><span class="me-2" role="img" aria-label="Emoji">💬</span>8h</span>
+		
+						</div>
+					  </a>
+		
+					  <a class="border-bottom-0 notification rounded-0 border-x-0 border-300" href="#!" data-bs-toggle="modal" data-bs-target="#error-modal">
+						<div class="notification-avatar">
+						  <div class="avatar avatar-xl me-3">
+							<img class="rounded-circle" src="assets/img/logos/harvard.png" alt="" />
+		
+						  </div>
+						</div>
+						<div class="notification-body">
+						  <p class="mb-1">Join <strong>GIS Institute Winter 2019</strong> Event arranged by <strong>Harvard University</strong>. Only three days to go.</p>
+						  <span class="notification-time"><span class="me-2" role="img" aria-label="Emoji">🚶</span>9h</span>
+		
+						</div>
+					  </a>
+		
+					  <a class="border-bottom-0 notification-unread notification rounded-0 border-x-0 border-300" href="#!" data-bs-toggle="modal" data-bs-target="#error-modal">
+						<div class="notification-avatar">
+						  <div class="avatar avatar-xl me-3">
+							<img class="rounded-circle" src="assets/img/team/7.jpg" alt="" />
+		
+						  </div>
+						</div>
+						<div class="notification-body">
+						  <p class="mb-1"><strong>Peter Jackson</strong> set CSE Curnival Programe in New Museums Site in <strong>University of Cambridge</strong></p>
+						  <span class="notification-time"><span class="me-2" role="img" aria-label="Emoji">💻</span>14h</span>
+		
+						</div>
+					  </a>
+		
+					  <a class="border-bottom-0 notification rounded-0 border-x-0 border-300" href="#!" data-bs-toggle="modal" data-bs-target="#error-modal">
+						<div class="notification-avatar">
+						  <div class="avatar avatar-xl me-3">
+							<img class="rounded-circle" src="assets/img/team/8.jpg" alt="" />
+		
+						  </div>
+						</div>
+						<div class="notification-body">
+						  <p class="mb-1"><strong>David Fincher</strong> declared you as a verified member of <strong>Stanford University.</strong></p>
+						  <span class="notification-time"><span class="me-2" role="img" aria-label="Emoji">✔️</span>2d</span>
+		
+						</div>
+					  </a>
+		
+					  <a class="border-bottom-0 notification rounded-0 border-x-0 border-300" href="#!" data-bs-toggle="modal" data-bs-target="#error-modal">
+						<div class="notification-avatar">
+						  <div class="avatar avatar-xl me-3">
+							<img class="rounded-circle" src="assets/img/team/9.jpg" alt="" />
+		
+						  </div>
+						</div>
+						<div class="notification-body">
+						  <p class="mb-1">Follow <strong>International Conference on Water and Environmental Engineering (ICWEE)</strong> event arranged by United Nations Development Program on 30 December 2018</p>
+						  <span class="notification-time"><span class="me-2" role="img" aria-label="Emoji">🔍</span>3d</span>
+		
+						</div>
+					  </a>
+		
+					  <a class="border-bottom-0 notification rounded-0 border-x-0 border-300" href="#!" data-bs-toggle="modal" data-bs-target="#error-modal">
+						<div class="notification-avatar">
+						  <div class="avatar avatar-xl me-3">
+							<img class="rounded-circle" src="assets/img/team/10.jpg" alt="" />
+		
+						  </div>
+						</div>
+						<div class="notification-body">
+						  <p class="mb-1"><strong>James Cameron</strong> invited to join the group: United Nations International Children's Fund</p>
+						  <span class="notification-time"><span class="me-2" role="img" aria-label="Emoji">🙋‍</span>2d</span>
+		
+						</div>
+					  </a>
+		
+					  <a class="border-bottom-0 notification-unread  notification rounded-0 border-x-0 border-300" href="#!" data-bs-toggle="modal" data-bs-target="#error-modal">
+						<div class="notification-avatar">
+						  <div class="avatar avatar-xl me-3">
+							<img class="rounded-circle" src="assets/img/logos/oxford.png" alt="" />
+		
+						  </div>
+						</div>
+						<div class="notification-body">
+						  <p class="mb-1"><strong>University of Oxford</strong> created an event : "Causal Inference Hilary 2019"</p>
+						  <span class="notification-time"><span class="me-2" role="img" aria-label="Emoji">✌️</span>1w</span>
+		
+						</div>
+					  </a>
+		
+					</div>
+				  </div>
 
  
 				<footer class="footer">
@@ -367,6 +525,33 @@
 
       	</div>
     </main>
+
+
+
+	<!-- Modal -->
+	
+<div class="modal fade" id="error-modal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 500px">
+    <div class="modal-content position-relative">
+      <div class="position-absolute top-0 end-0 mt-2 me-2 z-index-1">
+        <button class="btn-close btn btn-sm btn-circle d-flex flex-center transition-base" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-0">
+        <div class="rounded-top-lg py-3 ps-4 pe-6 bg-light">
+          <h4 class="mb-1" id="modalExampleDemoLabel">Bildiriş başlığı</h4>
+        </div>
+        <div class="p-4 pb-0">
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat vel, modi ex veritatis quasi fugiat magnam cupiditate reiciendis officia molestias tempora quas praesentium suscipit eveniet quis illo! Vel, quidem quisquam!</p>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Bağla</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
     <!-- ===============================================-->
     <!-- JavaScripts -->
